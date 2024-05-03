@@ -1,22 +1,33 @@
+"use client";
+
 import styles from './home.module.css';
 import Image from 'next/image';
+import { IoMailOpenOutline } from "react-icons/io5";
+import { useState } from 'react';
+
 
 const Home = () => {
+  const [isHovered, setIsHovered] = useState(false);
+
   return (
     <div className={styles.container}>
       <div className={styles.textContainer}>
+        <p className={styles.introduction}>
+          Hello, my name is
+        </p>
         <h1 className={styles.title}>
-          TITLE
+          Hubert Maximus.
         </h1>
         <p className={styles.desc}>
-          PARAGRAPH
+          I created this website to showcase my skills and projects.
         </p>
         <div className={styles.buttons}>
-          <button className={styles.button}>Learn More</button>
-          <button className={styles.button}>Contact</button>
-        </div>
-        <div className={styles.brands}>
-          <Image src="/brands.png" alt="Brands" fill className={styles.brandImg}/>
+          <button className={styles.button}
+          onMouseEnter={() => setIsHovered(true)}
+          onMouseLeave={() => setIsHovered(false)}
+          >
+            {isHovered ? <IoMailOpenOutline className={styles.mail}/> : "Contact"}
+            </button>
         </div>
       </div>
       <div className={styles.imgContainer}>

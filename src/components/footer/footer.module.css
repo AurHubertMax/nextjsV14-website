@@ -7,10 +7,18 @@
     color: gray;
 }
 
-.logo{
-    font-weight: bold;
+.icons{
+    display: flex;
+    gap: 20px;
+    font-size: 24px;
+    color: var(--text);
+    opacity: 0.7;
+    margin-top: 20px;
 }
 
-.text{
-    font-size: 12px;
+.line {
+    border-top: 2px solid var(--complement1);
+    margin-top: 40px; 
+    margin-bottom: 20px; 
+    width: 100%;
 }

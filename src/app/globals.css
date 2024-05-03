@@ -1,7 +1,10 @@
 :root{
-    --bg: #003140;
+    --bg: #001f29;
+    --complement1: #006464;
+    --complement2: #03acac;
+    --complement3: #06bebe;
     --bgSoft: #2d2b42;
-    --text: white;
+    --text: #def7f7;
     --textSoft: #e5e5e5;
     --btn: #3673fd;
 }

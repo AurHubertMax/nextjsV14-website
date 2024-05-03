@@ -5,7 +5,9 @@
     justify-content: space-between;
 }
 
-.logo{
-    font-size: 30px;
-    font-weight: bold;
+.line {
+    border-top: 2px solid var(--complement1);
+    margin-top: 20px; 
+    margin-bottom: 20px; 
+    width: 50%;
 }
