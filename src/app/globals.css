@@ -5,7 +5,7 @@
     --complement3: #06bebe;
     --bgSoft: #2d2b42;
     --text: #def7f7;
-    --textSoft: #e5e5e5;
+    --textSoft: rgba(255, 255, 255, 0.6);
     --btn: #3673fd;
 }
 

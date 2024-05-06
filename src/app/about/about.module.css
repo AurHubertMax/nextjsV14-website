@@ -1,5 +1,112 @@
-.imgContainer{
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 50px;
+    padding-left: 100px;
+    margin-bottom: -100px;
+}
+
+.belowContainer{
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+}
+
+.title{
+    font-size: 30px;
+    color: var(--textSoft);
+    display: flex;
+    margin-top: -100px;
+}
+
+.line {
+    border-top: 2px solid var(--complement1);
+    margin-top: 20px;
+    margin-left: 20px; 
+    margin-right: 15px;
+    width: 5%;
+    opacity: 0.5;
+}
+
+.line2 {
+    border-top: 2px solid var(--complement1);
+    margin-top: 20px;
+    margin-left: 20px; 
+    width: 15%;
+    opacity: 0.5;
+}
+
+.line3 {
+    border-top: 2px solid var(--complement1);
+    margin-top: 20px;
+    margin-left: 20px; 
+    width: 40%;
+    opacity: 0.5;
+}
+
+.textContainer{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding-right: 100px;
     position: relative;
-    width: 350px;
+    color: var(--textSoft);
+    font-size: 20px;
     height: 500px;
+    overflow-y: auto;
+}
+
+.textContainer::-webkit-scrollbar {
+    width: 10px;
+}
+
+.textContainer::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+}
+ 
+.textContainer::-webkit-scrollbar-thumb {
+    background: #888; 
+}
+
+.textContainer::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+}
+
+.imgContainer{
+    flex: 0.8;
+    display: flex;
+    position: relative;
+    width: 450px;
+    height: 500px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px 5px rgba(255, 255, 255, 0.2);
+}
+
+.aboutPar{
+    flex: 1;
+    display: flex;
+    position: relative;
+    
+}
+
+.listContainer{
+    display: flex;
+    padding-top: 20px;
+    justify-content: center;
+}
+
+.listContainer ul{
+    padding-right: 100px;
+}
+
+.link{
+    color: rgb(255, 255, 255, 1);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.link:hover{
+    color: var(--complement3);
 }

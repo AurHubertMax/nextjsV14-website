@@ -5,9 +5,3 @@
     justify-content: space-between;
 }
 
-.line {
-    border-top: 2px solid var(--complement1);
-    margin-top: 20px; 
-    margin-bottom: 20px; 
-    width: 50%;
-}
