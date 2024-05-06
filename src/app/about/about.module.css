@@ -17,7 +17,7 @@
     font-size: 30px;
     color: var(--textSoft);
     display: flex;
-    margin-top: -100px;
+    margin-top: -200px;
 }
 
 .line {
@@ -58,15 +58,16 @@
 }
 
 .textContainer::-webkit-scrollbar {
-    width: 10px;
+    width: 3px;
 }
 
 .textContainer::-webkit-scrollbar-track {
-    background: #f1f1f1; 
+    background: var(--complement1); 
 }
  
 .textContainer::-webkit-scrollbar-thumb {
-    background: #888; 
+    background: var(--complement2); 
+    border-radius: 20px;
 }
 
 .textContainer::-webkit-scrollbar-thumb:hover {
@@ -99,6 +100,16 @@
 
 .listContainer ul{
     padding-right: 100px;
+    list-style: none;
+}
+
+.listContainer ul li::before {
+    content: "➤"; 
+    color: var(--complement2); 
+    display: inline-block; 
+    width: 2em; 
+    margin-left: 10px;
+    font-size: 10px;
 }
 
 .link{

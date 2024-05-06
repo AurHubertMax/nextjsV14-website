@@ -6,8 +6,13 @@ const Navbar = () => {
         <div className={styles.container}>
             <div className={styles.line}>
             </div>
-            <div>
-                <Links />
+            <div className={styles.links}>
+                <div className={styles.homepageLink}>
+                </div>
+                <div className={styles.otherLinks}>
+                    <Links />
+                </div>
+                
             </div>
         </div>
     )

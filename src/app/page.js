@@ -22,12 +22,12 @@ const Home = () => {
           I created this website to showcase my skills and projects.
         </p>
         <div className={styles.buttons}>
-          <button className={styles.button}
+          <a className={styles.button} href="mailto:ahubertmax@gmail.com"
           onMouseEnter={() => setIsHovered(true)}
           onMouseLeave={() => setIsHovered(false)}
           >
             {isHovered ? <IoMailOpenOutline className={styles.mail}/> : "Contact"}
-            </button>
+            </a>
         </div>
       </div>
       <div className={styles.imgContainer}>

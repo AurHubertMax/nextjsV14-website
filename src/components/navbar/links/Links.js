@@ -3,19 +3,12 @@
 import styles from './links.module.css';
 import NavLink from './navLink/navLink';
 import { useState } from 'react';
+import { IoMdHome } from "react-icons/io";
 
 const links = [
     {
-        title: "Homepage",
-        path: "/",
-    },
-    {
         title: "About",
         path: "/about",
-    },
-    {
-        title: "Contact",
-        path: "/contact",
     },
     {
         title: "Blog",
@@ -23,29 +16,24 @@ const links = [
     }
 ];
 
+const homepageLink = {
+    title: <IoMdHome className={styles.homeIcon}/>,
+    path: "/",
+
+};
+
 const Links = () => {
     const [open, setOpen] = useState(false);
-    
-    //TEMPORARY
-    const session = true;
-    const isAdmin = true;
+
     return (
         <div className={styles.container}>
-            <div className={styles.links}>
+            <div className={styles.homepageLink}>
+                <NavLink item={homepageLink}/>
+            </div>
+            <div className={styles.otherLinks}>
                 {links.map((link => (
                     <NavLink item={link} key={link.title}/>
-            )))} 
-                {session ? (
-                    <>
-                        { //if authenticated user is admin, show admin link
-                            isAdmin && <NavLink item={{title: "Admin", path: "/admin"}}/>
-                        }
-                        
-                        <button className={styles.logout}>Logout</button>
-                    </>
-                ) : (
-                    <NavLink item={{title: "Login", path: "/login"}}/>
-                )}
+                )))} 
             </div>
             <button className={styles.menuButton} onClick={() => setOpen((prev) => !prev)}>Menu</button>
             {
